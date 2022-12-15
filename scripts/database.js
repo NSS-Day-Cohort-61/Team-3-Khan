@@ -32,7 +32,10 @@ const database = {
     { id: 1, size: "Bucket" },
     { id: 2, size: "Bread box" },
     { id: 3, size: "Rubbish Bin" }
-  ]
+  ], 
+  choices : [],
+  purchases: {}
+
 };
 
 export const getVegetables = () => {
@@ -40,5 +43,5 @@ export const getVegetables = () => {
 }
 
 export const setVeggie = (id) => {
-  database.comboChoices.veggiesId = id
+  database.choices.veggiesId = id
 }
