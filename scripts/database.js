@@ -32,5 +32,14 @@ const database = {
     { id: 1, size: "Bucket" },
     { id: 2, size: "Bread box" },
     { id: 3, size: "Rubbish Bin" }
-  ]
+  ],
+  purchases: [],
+  choices: {}
 };
+
+export const getProteins = () => {
+  return [...database.proteins]
+}
+export const setProtein = (id) => {
+  database.choices.proteinId = id
+}
