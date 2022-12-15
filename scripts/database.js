@@ -34,3 +34,11 @@ const database = {
     { id: 3, size: "Rubbish Bin" }
   ]
 };
+
+export const getVegetables = () => {
+  return database.vegetables.map(vegetable => ({...vegetable}))
+}
+
+export const setVeggie = (id) => {
+  database.comboChoices.veggiesId = id
+}
