@@ -44,6 +44,15 @@ export const getProteins = () => {
 export const setProtein = (id) => {
   database.choices.proteinId = id
 }
+
+export const getCarbs = () => {
+  return database.carbs.map(carb => ({...carb}))
+}
+
+
+export const setCarbs = (id) => {
+  database.choices.carbsId = id
+}
 export const getVegetables = () => {
   return database.vegetables.map(vegetable => ({...vegetable}))
 }
