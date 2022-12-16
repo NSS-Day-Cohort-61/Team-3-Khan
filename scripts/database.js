@@ -35,6 +35,7 @@ const database = {
   ],
   purchases: [],
   choices: {}
+
 };
 
 export const getProteins = () => {
@@ -42,6 +43,13 @@ export const getProteins = () => {
 }
 export const setProtein = (id) => {
   database.choices.proteinId = id
+}
+export const getVegetables = () => {
+  return database.vegetables.map(vegetable => ({...vegetable}))
+}
+
+export const setVeggie = (id) => {
+  database.choices.veggiesId = id
 }
 
 export const getSeasonings = () => {
