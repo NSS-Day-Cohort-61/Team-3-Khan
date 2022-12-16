@@ -51,7 +51,7 @@ export const getCarbs = () => {
 
 
 export const setCarbs = (id) => {
-  database.choices.CarbsId === id
+  database.choices.carbsId = id
 }
 export const getVegetables = () => {
   return database.vegetables.map(vegetable => ({...vegetable}))
