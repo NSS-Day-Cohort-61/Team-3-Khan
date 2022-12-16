@@ -5,7 +5,7 @@ const carbs = getCarbs()
 document.addEventListener(
     'change',
     (newEvent) => {
-        if (newEvent.target.name === 'carbo') {
+        if (newEvent.target.name = 'carbo') {
             setCarbs(parseInt(newEvent.target.value))
         }
     }
