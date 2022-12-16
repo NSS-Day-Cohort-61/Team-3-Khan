@@ -60,3 +60,10 @@ export const getVegetables = () => {
 export const setVeggie = (id) => {
   database.choices.veggiesId = id
 }
+
+export const getSeasonings = () => {
+  return [...database.seasonings]
+}
+export const setSeasonings = (id) => {
+  database.choices.seasoningId = id
+}
