@@ -12,16 +12,16 @@ document.addEventListener(
 )
 
 export const Carbs = () => {
-    let html = "<ul>"
-
-    const listItems = carbs.map((carb) => {
-        return `<li>
-            <input value="${carb.id}" name="carbo" type="radio" />${carb.name}
-        </li>`    
-    })
     
-    html += listItems.join("")
-    html += "</ul>"
-
+    let html = `
+    <ul>
+        ${carbs.map(carb => {
+            return `<li>
+                <input value="${carb.id}" name="carbo" type="radio" />${carb.name} ${carb.price}
+            </li>`
+            }).join("")
+        }
+    </ul>
+    `
     return html
 }
