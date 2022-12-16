@@ -43,3 +43,10 @@ export const getProteins = () => {
 export const setProtein = (id) => {
   database.choices.proteinId = id
 }
+
+export const getSeasonings = () => {
+  return [...database.seasonings]
+}
+export const setSeasonings = (id) => {
+  database.choices.seasoningId = id
+}
